@@ -14,25 +14,21 @@
 
     <div class="page">
         <header>
-            <nav>
-                <section class="container1">
-                    <img src="imgs/logo-desktop.svg" alt="RocketCoffee" id="logoDesk">
-                    <img src="imgs/logo-mobile.svg" alt="RocketCoffee" id="logoMobile">
-                </section>
-                <section class="container2" id="mainMenu">
-                    <ul>
-                        <li>Home</li>
-                        <li>Menu</li>
-                        <li>Recompensas</li>
-                        <li>Gift Cards</li>
-                        <li>Lojas</li>
-                    </ul>
-                </section>
-                <section>
-                    <button class="buttonAll button1">PEGAR MEU CAFÉ</button>
-                    <img src="imgs/menu-buguer-open.svg" alt="RocketCoffee" id="menuOpen">
-                </section>
+            <div class="menuLogo">
+                <img src="imgs/logo-desktop.svg" alt="">
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <ul class="menuLista">
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>Recompensas</li>
+                    <li>Gift Cards</li>
+                    <li>Lojas</li>
+                </ul>
             </nav>
+            <div class="menuBotao">
+                <button id="mudamenu">Botao Aqui</button>
+            </div>
         </header>
         <main>
             <div class="greatDivAll greatDiv1">
@@ -50,6 +46,19 @@
             <img src="imgs/rocket-coffee.png" alt="Get your coffee now!">
         </footer>
     </div>
-    <script src="./coffeebtn.js"></script>
+
+<script src="./coffeebtn.js"></script>
+
+<script>
+function toggleMenu() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+	  x.className += " responsive";
+	} else {
+	  x.className = "topnav";
+	}
+  }         
+</script>
+
 </body>
 </html>

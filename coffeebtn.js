@@ -1,6 +1,4 @@
-const menuOpen = document.querySelector("#menuOpen");
-const mainMenu = document.querySelector("#mainMenu")
-
+const menuOpen = document.querySelector("#mudamenu");
 
 menuOpen.onclick = () => { 
 	menuOpen.classList.add("classeteste")

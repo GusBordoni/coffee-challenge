@@ -5,7 +5,7 @@
   --border: #29292E;
   --border-menu-mobile: #A8A8B3;
   --text-color-menu-mobile: #E1E1E6;
-
+  font-family: 'Manrope', sans-serif;
 }
 
 body {
@@ -23,24 +23,29 @@ body {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  font-family: 'Manrope', sans-serif;
 }
 
 header {
+  border: 1px solid red;
   padding: 0 8%;
   height: 100px;
-  transition: padding 1s;
-}
-
-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  transition: padding 1s;
+}
+
+.topnav a {
+  overflow: hidden;
+  /* align-items: center; */
+  
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
   gap: 2rem;
-  height: 65px;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 main {
@@ -78,42 +83,9 @@ footer img {
   transition: opacity 0.5s, visibility 0s;
 }
 
-/* -------------- menu hide and show --------------- */
-
-#menuOpen {
-  display: block;
-  visibility: hidden;
-  height: 0;
-  opacity: 0;
-  transition: visibility 0s, height 0s, opacity 1s;
-}
-
-.classeteste {
-  border: 1px solid red;
-  visibility: visible;
-  height: auto;
-  opacity: 1;
-  overflow:visible;
-}
-
-/* ------------------------------------------------- */
-
-ul {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  list-style: none;
-  font-family: 'Manrope', sans-serif;
-}
-
-li {
-  display: ruby;
-}
-
 .buttonAll {
   background-color: rgba(255,255,255,0);
   border: 3px solid var(--button);
-  font-family: 'Manrope', sans-serif;
   color: var(--text-color);
   border: 3;
   border-radius: 6px;
@@ -212,9 +184,8 @@ li {
       background-repeat: no-repeat;
       background-size: cover;
     }
-    nav {
-      align-items: center;
-      justify-content: space-around;
+    .menuLista {
+      display: none;
     }
     .fxText {
       visibility: visible;
@@ -253,12 +224,6 @@ li {
     }
     header {
       padding: 0;
-    }
-    #menuOpen {
-      display: block;
-      visibility: visible;
-      height: auto;
-      opacity: 1;
     }
     .greatCoffee {
       font-size: 4rem;
