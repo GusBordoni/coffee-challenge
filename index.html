@@ -4,39 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document 2</title>
     <link rel="stylesheet" href="coffee.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
         </style> 
 </head>
 <body>
-    <header>
-        <div>
-            <img src="imgs/logo-desktop.svg" alt="Rocket Coffee" id="rocketlogo">
-        </div>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Menu</li>
-                <li>Recompensas</li>
-                <li>Gift Cards</li>
-                <li>Lojas</li>
-            </ul>
-        </nav>
-    </header>
-    <div id="winCoffee">
-        <button>PEGAR MEU CAFÉ</button>
-        <div id="menuButton"><a href="#"><img src="imgs/menu-buguer-open.svg" alt="Menu"></a></div>
-    </div>
-    <main>
-        <h1>Great Coffee</h1>
-        <p id="greatfont">&lt;Great Code/&gt;</p>
-    </main>
-    <footer>
-        <img src="imgs/rocket-coffee.png" alt="Get your Rocket Coffee Now!" id="rocketCoffee">
-    </footer>
 
-    <script src="coffeebtn.js"></script>
+    <div class="page">
+        <header>
+            <nav>
+                <section class="container1">
+                    <img src="imgs/logo-desktop.svg" alt="RocketCoffee" id="logoDesk">
+                    <img src="imgs/logo-mobile.svg" alt="RocketCoffee" id="logoMobile">
+                </section>
+                <section class="container2" id="mainMenu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Menu</li>
+                        <li>Recompensas</li>
+                        <li>Gift Cards</li>
+                        <li>Lojas</li>
+                    </ul>
+                </section>
+                <section>
+                    <button class="buttonAll button1">PEGAR MEU CAFÉ</button>
+                    <img src="imgs/menu-buguer-open.svg" alt="RocketCoffee" id="menuOpen">
+                </section>
+            </nav>
+        </header>
+        <main>
+            <div class="greatDivAll greatDiv1">
+                <p class="coffeeNextlvl">O café que fará seu código decolar para o próximo nível.</p>
+            </div>
+            <div class="greatDivAll greatDiv2">
+                <button class="buttonAll button2" id="getCoffee">PEGAR MEU CAFÉ</button>
+            </div>
+            <div class="greatDivAll greatDiv3">
+                <p class="greatCoffee">Great Coffee</p>
+                <p class="greatCode">&lt;Great Code/&gt;</p>
+            </div>
+        </main>
+        <footer>
+            <img src="imgs/rocket-coffee.png" alt="Get your coffee now!">
+        </footer>
+    </div>
+    <script src="./coffeebtn.js"></script>
 </body>
 </html>

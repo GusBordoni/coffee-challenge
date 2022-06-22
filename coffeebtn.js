@@ -1,4 +1,14 @@
-const body = document.querySelector("body")
+const menuOpen = document.querySelector("#menuOpen");
+const mainMenu = document.querySelector("#mainMenu")
+
+
+menuOpen.onclick = () => { 
+	menuOpen.classList.add("classeteste")
+}
+
+
+
+/* const body = document.querySelector("body")
 const navBar = document.querySelector(".c-navbar")
 const menuBtn =  document.querySelector(".c-navbar__btn--menu")
 const cancelBtn = document.querySelector(".c-navbar__btn--cancel")
@@ -14,4 +24,4 @@ cancelBtn.onclick = ()=>{
 				body.classList.remove("c-body__disabled");
 				navBar.classList.remove("show");		menuBtn.classList.remove("c-navbar__btn-menu--hide");
 				menuActive.classList.remove(".c-navbar__logo--mobile-active");
-}
+} */
