@@ -13,11 +13,12 @@
 <body>
 
     <div class="page">
-        <header>
-            <div class="menuLogo">
-                <img src="imgs/logo-desktop.svg" alt="">
+        <header> <!-- header tem 5 partes -->
+            <div class="menuLogo"> <!-- div do logo -->
+                <img src="imgs/logo-desktop.svg" alt="" class="logoDesk">
+                <img src="imgs/logo-mobile.svg" alt="" class="logoMobile">
             </div>
-            <nav class="topnav" id="myTopnav">
+            <nav class="topnav" id="myTopNav"> <!-- menu de navegação -->
                 <ul class="menuLista">
                     <li>Home</li>
                     <li>Menu</li>
@@ -25,9 +26,15 @@
                     <li>Gift Cards</li>
                     <li>Lojas</li>
                 </ul>
+                <div class="botaoFechaMenu" id="botaoFechaMenu"> <!-- botao fecha menu -->
+                    <img src="imgs/menu-buguer-close.svg" class="" id="">
+                </div>
             </nav>
-            <div class="menuBotao">
-                <button class="buttonAll button1" id="buttonAll">PEGAR MEU CAFÉ</button>
+            <div class="botaoAbreMenu" id="botaoAbreMenu"> <!-- botao abre menu -->
+                <img src="imgs/menu-buguer-open.svg" class="" id="">
+            </div>
+            <div class="btnPegaCafe"> <!-- botao pegar café -->
+                <button class="buttonAll tipoLink button1" id="">PEGAR MEU CAFÉ</button>
             </div>
         </header>
         <main>

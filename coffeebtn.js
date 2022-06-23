@@ -1,8 +1,10 @@
-const menuOpen = document.querySelector("#mudamenu");
+const botaoFechaMenu = document.querySelector("#botaoFechaMenu");
+const myTopNav = document.querySelector("#myTopNav")
 
-menuOpen.onclick = () => { 
-	menuOpen.classList.add("classeteste")
+botaoFechaMenu.onclick = () => {
+	console.log("teste");
 }
+
 
 
 

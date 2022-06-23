@@ -5,7 +5,6 @@
   --border: #29292E;
   --border-menu-mobile: #A8A8B3;
   --text-color-menu-mobile: #E1E1E6;
-  font-family: 'Manrope', sans-serif;
 }
 
 body {
@@ -16,6 +15,7 @@ body {
   height: 100vh;
   margin: 0;
   color: var(--text-color);
+  font-family: 'Manrope', sans-serif;
 }
 
 .page {
@@ -30,9 +30,13 @@ header {
   padding: 0 8%;
   height: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   transition: padding 1s;
+}
+
+.tipoLink {
+  cursor: pointer;
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -42,22 +46,40 @@ header {
 }
 
 .topnav {
-  overflow: hidden;  
+/*   overflow: hidden;   */
+  position: flex;
   border: 1px solid blue;
   min-width: 500px;
   max-width: 600px;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.menuBotao {
-  border: 1px solid green;
-  z-index: 1;
+.botaoAbreMenu {
+  display:none;
 }
 
-/* ------------------------------------------------------------------------------------------------- */
+.botaoFechaMenu {
+  display: block;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+}
 
+.hide {
+  min-width: unset;
+  max-width: unset;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  display: unset;
+  left:-100%;
+}
+/* ------------------------------------------------------------------------------------------------- */
 
 ul {
   display: flex;
@@ -87,7 +109,7 @@ footer img {
   max-width: 100%;
 }
 
-#logoMobile {
+.logoMobile {
   display: block;
   height: 0;
   visibility: hidden;
@@ -95,7 +117,7 @@ footer img {
   transition: opacity 1s, visibility 0s;
 }
 
-#logoDesk {
+.logoDesk {
   display: block;
   height: auto;
   visibility: visible;
@@ -103,16 +125,22 @@ footer img {
   transition: opacity 0.5s, visibility 0s;
 }
 
+
+
+/* -------------------------------------------------------------------------------- */
+
+
 .buttonAll {
   background-color: rgba(255,255,255,0);
   border: 3px solid var(--button);
   color: var(--text-color);
-  border: 3;
   border-radius: 6px;
   padding: 12px 32px;
-  display: block;
+  display: flex;
   align-items:center;
   line-height: 1;
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
 }
 
 .button1 {
@@ -197,7 +225,9 @@ footer img {
   z-index: -1;
 }
 
-
+@media only screen and (min-width: 871px) {
+    /* screen resize menu fix: */
+}
 
 @media only screen and (max-width: 870px) {
     /* For mobile phones: */
@@ -207,27 +237,33 @@ footer img {
       background-repeat: no-repeat;
       background-size: cover;
     }
-/*     .menuLista {
+    .botaoAbreMenu {
       display: none;
-    } */
-    .topnav {
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      left: 0;
+      position:fixed;
       top: 0;
-      padding: 0;
-      background-color: #000;
-      display: unset;
-      justify-content: unset;
+      left: 0;
+    }
+    .btnPegaCafe {
+      display: none;
+    }
+    .topnav {
       min-width: unset;
       max-width: unset;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+      position: fixed;
+      display: unset;
     }
     ul {
-      display: block;
-      flex-direction: row;
+      display: flex;
+      flex-direction: column;
       padding: 0;
+      gap: 0;
       margin-top: 120px;
+
     }
     li {
       font-size: 1.5rem;
@@ -247,12 +283,12 @@ footer img {
       opacity: 1;
       height: auto;
     }
-    #logoMobile {
+    .logoMobile {
       visibility: visible;
       height: auto;
       opacity: 1;
     }
-    #logoDesk {
+    .logoDesk {
       visibility: hidden;
       height: 0;
       opacity: 0;
@@ -278,7 +314,8 @@ footer img {
       height: auto;
     }
     header {
-      padding: 0;
+      padding: 0 50px;
+      justify-content: space-between;
     }
     .greatCoffee {
       font-size: 4rem;
