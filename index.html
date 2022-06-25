@@ -19,14 +19,15 @@
                     <img src="imgs/logo-desktop.svg">
                     <img src="imgs/logo-mobile.svg">
                 </div>
-                <a href="#" class="toggle-button"><img src="imgs/menu-buguer-open.svg"></a>
+                <a href="#" class="open-button"><img src="imgs/menu-buguer-open.svg"></a>
                 <div class="navbar-links">
+                    <a href="#" class="close-button"><img src="imgs/menu-buguer-close.svg"></a>
                     <ul>
-                        <li>Home</li>
-                        <li>Menu</li>
-                        <li>Recompensas</li>
-                        <li>Gift Cards</li>
-                        <li>Lojas</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Recompensas</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Lojas</a></li>
                     </ul>
                 </div>
                 <button class="buttonAll button1">PEGAR MEU CAFÉ</button>
@@ -37,7 +38,7 @@
                 <p class="coffeeNextlvl">O café que fará seu código decolar para o próximo nível.</p>
             </div>
             <div class="greatDivAll greatDiv2">
-                <button class="buttonAll button2">PEGAR MEU CAFÉ</button>
+                <button class="buttonAll button2">PEGAR MEU CAFÉ  <span class="greatGreater">&gt;</span></button>
             </div>
             <div class="greatDivAll greatDiv3">
                 <p class="greatCoffee">Great Coffee</p>
@@ -52,12 +53,22 @@
 <!-- <script src="./coffeebtn.js"></script> -->
 
 <script>
-    const toggleButton = document.getElementsByClassName('toggle-button')[0]
-    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    const openButton = document.getElementsByClassName('open-button')[0];
+    const closeButton = document.getElementsByClassName('close-button')[0];
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 
-    toggleButton.addEventListener('click', () => {
-        navbarLinks.classList.toggle('active')
-    })
+    openButton.addEventListener('click', () => {
+        navbarLinks.classList.add('active');
+        openButton.classList.add('active');
+        closeButton.classList.add('active');
+    });
+
+    closeButton.addEventListener('click', () => {
+        navbarLinks.classList.remove('active');
+        openButton.classList.remove('active');
+        closeButton.classList.remove('active');
+    });
+
 </script>
 
 </body>
