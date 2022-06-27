@@ -8,7 +8,7 @@
 
 </p>
 
-### 💻 Como acessar
+### 💻 Sobre
 
 <p align="justify">
 
