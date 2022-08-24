@@ -4,7 +4,9 @@
 
 <p align="justify">
 
-- HTML, CSS, JAVASCRIPT
+- HTML
+- CSS
+- JAVASCRIPT
 
 </p>
 
@@ -12,8 +14,8 @@
 
 <p align="justify">
 
--  This was my first challenge / exercise, right after finishing the "Discovery" course by Rocketseat.
+-  Este foi meu primeiro desafio / exercício após terminar o curso "Discover" da Rocketseat.
 
 </p>
 
- desafio @rocketseat
+ desafio @rocketseat(https://www.rocketseat.com.br/)

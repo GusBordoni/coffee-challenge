@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap');
+
 :root {
   --backgrond: #000;
   --text-color: #FFF;
@@ -8,6 +10,8 @@
 }
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -24,7 +28,7 @@ body {
 .page {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -218,7 +222,6 @@ span.greatGreater {
 }
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
     body {
       background-image: url(imgs/blur-mobile.png);
       background-position: center bottom;

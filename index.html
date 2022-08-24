@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocket Coffee Challenge</title>
     <link rel="stylesheet" href="coffee.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap');
-        </style> 
+    
 </head>
 <body>
 
     <div class="page">
-        <header> <!-- header tem 5 partes -->
+        <header>
             <nav class="navbar">
                 <div class="navbar-logo">
                     <img src="imgs/logo-desktop.svg">
@@ -50,26 +48,6 @@
         </footer>
     </div>
 
-<!-- <script src="./coffeebtn.js"></script> -->
-
-<script>
-    const openButton = document.getElementsByClassName('open-button')[0];
-    const closeButton = document.getElementsByClassName('close-button')[0];
-    const navbarLinks = document.getElementsByClassName('navbar-links')[0];
-
-    openButton.addEventListener('click', () => {
-        navbarLinks.classList.add('active');
-        openButton.classList.add('active');
-        closeButton.classList.add('active');
-    });
-
-    closeButton.addEventListener('click', () => {
-        navbarLinks.classList.remove('active');
-        openButton.classList.remove('active');
-        closeButton.classList.remove('active');
-    });
-
-</script>
-
+<script src="./coffeebtn.js"></script>
 </body>
 </html>

@@ -1,27 +1,15 @@
-const botaoFechaMenu = document.querySelector("#botaoFechaMenu");
-const myTopNav = document.querySelector("#myTopNav")
+const openButton = document.getElementsByClassName('open-button')[0];
+const closeButton = document.getElementsByClassName('close-button')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 
-botaoFechaMenu.onclick = () => {
-	console.log("teste");
-}
+openButton.addEventListener('click', () => {
+	navbarLinks.classList.add('active');
+	openButton.classList.add('active');
+	closeButton.classList.add('active');
+});
 
-
-
-
-/* const body = document.querySelector("body")
-const navBar = document.querySelector(".c-navbar")
-const menuBtn =  document.querySelector(".c-navbar__btn--menu")
-const cancelBtn = document.querySelector(".c-navbar__btn--cancel")
-const menuActive = document.querySelector(".c-navbar__logo--mobile")
-
-menuBtn.onclick = ()=>{
-				body.classList.add("c-body__disabled");
-				navBar.classList.add("show");													menuBtn.classList.add("c-navbar__btn-menu--hide");		
-				menuActive.classList.add(".c-navbar__logo--mobile-active");
-}
-
-cancelBtn.onclick = ()=>{
-				body.classList.remove("c-body__disabled");
-				navBar.classList.remove("show");		menuBtn.classList.remove("c-navbar__btn-menu--hide");
-				menuActive.classList.remove(".c-navbar__logo--mobile-active");
-} */
+closeButton.addEventListener('click', () => {
+	navbarLinks.classList.remove('active');
+	openButton.classList.remove('active');
+	closeButton.classList.remove('active');
+});
