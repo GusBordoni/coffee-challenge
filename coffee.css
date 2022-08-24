@@ -17,10 +17,8 @@
 body {
   background-color: var(--backgrond);
   background-image: url(imgs/blur-1.png), url(imgs/blur-2.png);
-  background-position: left bottom, right top;
+  background-position: 0 100%, right top;
   background-repeat: no-repeat, no-repeat;
-  height: 100vh;
-  margin: 0;
   color: var(--text-color);
   font-family: 'Manrope', sans-serif;
 }
@@ -29,7 +27,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: fit-content;
   height: 100vh;
+  overflow: auto;
 }
 
 header {
@@ -117,13 +117,14 @@ main {
 
 footer {
   display: flex;
-  flex: 0 250px;
+  flex: 1;
   align-items: flex-end;
   justify-content: center;
 }
 
 footer img {
   max-width: 100%;
+  max-height: 98%;
 }
 
 span.greatGreater {
@@ -164,7 +165,7 @@ span.greatGreater {
 }
 
 .greatCoffee {
-  font-size: 5rem;
+  font-size: 3.75rem;
   line-height: 1;
   font-weight: 700;
   transition: font-size 1s;
@@ -175,7 +176,7 @@ span.greatGreater {
 .greatCode {
   text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
   color: var(--backgrond);
-  font-size: 5rem;
+  font-size: 3.75rem;
   font-weight: 700;
   margin: 0;
   transition: font-size 1s;
@@ -192,14 +193,16 @@ span.greatGreater {
 }
 
 .greatDiv1 {
-  flex-grow: 1;
+  flex-grow: 0;
+  display: none;
 }
 .greatDiv2 {
-  flex-grow: 1;
+  flex-grow: 0;
+  display: none;
 }
 .greatDiv3 {
   flex-grow: 5;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 .coffeeNextlvl {
@@ -218,6 +221,9 @@ span.greatGreater {
 @media only screen and (min-width: 1200px) {
     header {
       padding: 0 15%;
+    }
+    .greatDiv3 {
+      padding: 0;
     }
 }
 
@@ -321,9 +327,11 @@ span.greatGreater {
     }
     .greatDiv1 {
       flex-grow: 2;
+      display: flex;
     }
     .greatDiv2 {
       flex-grow: 1;
+      display: flex;
     }
     .greatDiv3 {
       flex-grow: 2;
