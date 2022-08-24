@@ -1,10 +1,10 @@
 # 💜 RocketCoffee Challenge by RocketSeat
 
-### Github Pages
+### :rocket: Github Pages
 
 - Clique aqui para visualizar o projeto funcionando: [Coffee Challenge](https://gusbordoni.github.io/coffee-challenge/)
 
-### :rocket: Tecnologias
+### :computer: Tecnologias
 
 <p align="justify">
 
@@ -14,7 +14,7 @@
 
 </p>
 
-### 💻 Sobre
+### :page_facing_up: Sobre
 
 <p align="justify">
 
