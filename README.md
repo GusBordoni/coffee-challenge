@@ -15,7 +15,8 @@
 <p align="justify">
 
 -  Este foi meu primeiro desafio / exercício após terminar o curso "Discover" da Rocketseat.
+-  Design responsivo e hidden navbar
 
 </p>
 
- desafio @rocketseat(https://www.rocketseat.com.br/)
+ desafio [@rocketseat](https://www.rocketseat.com.br/)
